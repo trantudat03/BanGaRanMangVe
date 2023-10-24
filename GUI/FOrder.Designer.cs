@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FOrder));
             this.panel_Type = new System.Windows.Forms.Panel();
             this.txb_Search = new System.Windows.Forms.TextBox();
             this.btn_DoUong = new System.Windows.Forms.Button();
@@ -281,9 +282,9 @@
             // 
             this.panel_OrderList.AutoScroll = true;
             this.panel_OrderList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_OrderList.Controls.Add(this.panel_KhuyenMai);
             this.panel_OrderList.Controls.Add(this.panel_KhachHang);
             this.panel_OrderList.Controls.Add(this.panel_Detail);
+            this.panel_OrderList.Controls.Add(this.panel_KhuyenMai);
             this.panel_OrderList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_OrderList.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel_OrderList.Location = new System.Drawing.Point(0, 42);
@@ -299,9 +300,9 @@
             this.panel_KhuyenMai.Controls.Add(this.btn_KhuyenMaiClose);
             this.panel_KhuyenMai.Controls.Add(this.btn_KhuyenMaiOk);
             this.panel_KhuyenMai.Controls.Add(this.label10);
-            this.panel_KhuyenMai.Location = new System.Drawing.Point(43, 51);
+            this.panel_KhuyenMai.Location = new System.Drawing.Point(8, 51);
             this.panel_KhuyenMai.Name = "panel_KhuyenMai";
-            this.panel_KhuyenMai.Size = new System.Drawing.Size(197, 374);
+            this.panel_KhuyenMai.Size = new System.Drawing.Size(423, 144);
             this.panel_KhuyenMai.TabIndex = 3;
             // 
             // panel_KhuyenMaiDS
@@ -340,11 +341,11 @@
             // btn_KhuyenMaiOk
             // 
             this.btn_KhuyenMaiOk.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_KhuyenMaiOk.Location = new System.Drawing.Point(36, 277);
+            this.btn_KhuyenMaiOk.Image = ((System.Drawing.Image)(resources.GetObject("btn_KhuyenMaiOk.Image")));
+            this.btn_KhuyenMaiOk.Location = new System.Drawing.Point(41, 270);
             this.btn_KhuyenMaiOk.Name = "btn_KhuyenMaiOk";
-            this.btn_KhuyenMaiOk.Size = new System.Drawing.Size(75, 40);
+            this.btn_KhuyenMaiOk.Size = new System.Drawing.Size(75, 39);
             this.btn_KhuyenMaiOk.TabIndex = 1;
-            this.btn_KhuyenMaiOk.Text = "OK";
             this.btn_KhuyenMaiOk.UseVisualStyleBackColor = true;
             this.btn_KhuyenMaiOk.Click += new System.EventHandler(this.btn_KhuyenMaiOk_Click);
             // 
@@ -369,9 +370,9 @@
             this.panel_KhachHang.Controls.Add(this.btn_LuuKH);
             this.panel_KhachHang.Controls.Add(this.label4);
             this.panel_KhachHang.Controls.Add(this.txb_SDT);
-            this.panel_KhachHang.Location = new System.Drawing.Point(71, 155);
+            this.panel_KhachHang.Location = new System.Drawing.Point(267, 333);
             this.panel_KhachHang.Name = "panel_KhachHang";
-            this.panel_KhachHang.Size = new System.Drawing.Size(360, 127);
+            this.panel_KhachHang.Size = new System.Drawing.Size(356, 91);
             this.panel_KhachHang.TabIndex = 3;
             // 
             // panel_ThemKH
@@ -385,7 +386,7 @@
             this.panel_ThemKH.Controls.Add(this.btn_ThemSubmit);
             this.panel_ThemKH.Controls.Add(this.txb_ThemSDTKH);
             this.panel_ThemKH.Controls.Add(this.label5);
-            this.panel_ThemKH.Location = new System.Drawing.Point(20, 25);
+            this.panel_ThemKH.Location = new System.Drawing.Point(52, 19);
             this.panel_ThemKH.Name = "panel_ThemKH";
             this.panel_ThemKH.Size = new System.Drawing.Size(294, 315);
             this.panel_ThemKH.TabIndex = 8;
@@ -401,11 +402,14 @@
             // 
             // btn_ThoatThem
             // 
-            this.btn_ThoatThem.Location = new System.Drawing.Point(197, 249);
+            this.btn_ThoatThem.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThoatThem.Image")));
+            this.btn_ThoatThem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_ThoatThem.Location = new System.Drawing.Point(179, 249);
             this.btn_ThoatThem.Name = "btn_ThoatThem";
-            this.btn_ThoatThem.Size = new System.Drawing.Size(75, 39);
+            this.btn_ThoatThem.Size = new System.Drawing.Size(107, 39);
             this.btn_ThoatThem.TabIndex = 8;
             this.btn_ThoatThem.Text = "Thoát";
+            this.btn_ThoatThem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ThoatThem.UseVisualStyleBackColor = true;
             this.btn_ThoatThem.Click += new System.EventHandler(this.btn_ThoatThem_Click);
             // 
@@ -444,11 +448,14 @@
             // 
             // btn_ThemSubmit
             // 
+            this.btn_ThemSubmit.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThemSubmit.Image")));
+            this.btn_ThemSubmit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_ThemSubmit.Location = new System.Drawing.Point(23, 249);
             this.btn_ThemSubmit.Name = "btn_ThemSubmit";
-            this.btn_ThemSubmit.Size = new System.Drawing.Size(82, 39);
+            this.btn_ThemSubmit.Size = new System.Drawing.Size(112, 39);
             this.btn_ThemSubmit.TabIndex = 2;
             this.btn_ThemSubmit.Text = "Thêm";
+            this.btn_ThemSubmit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ThemSubmit.UseVisualStyleBackColor = true;
             this.btn_ThemSubmit.Click += new System.EventHandler(this.btn_ThemSubmit_Click);
             // 
@@ -473,12 +480,15 @@
             // btn_ThemKH
             // 
             this.btn_ThemKH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ThemKH.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ThemKH.Location = new System.Drawing.Point(238, 72);
+            this.btn_ThemKH.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThemKH.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThemKH.Image")));
+            this.btn_ThemKH.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_ThemKH.Location = new System.Drawing.Point(188, 72);
             this.btn_ThemKH.Name = "btn_ThemKH";
-            this.btn_ThemKH.Size = new System.Drawing.Size(96, 45);
+            this.btn_ThemKH.Size = new System.Drawing.Size(146, 49);
             this.btn_ThemKH.TabIndex = 7;
-            this.btn_ThemKH.Text = "Thêm";
+            this.btn_ThemKH.Text = "Thêm khách \r\nhàng\r\n\r\n";
+            this.btn_ThemKH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ThemKH.UseVisualStyleBackColor = true;
             this.btn_ThemKH.Click += new System.EventHandler(this.btn_ThemKH_Click);
             // 
@@ -496,11 +506,14 @@
             // btn_ThoatKH
             // 
             this.btn_ThoatKH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ThoatKH.Location = new System.Drawing.Point(259, 311);
+            this.btn_ThoatKH.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThoatKH.Image")));
+            this.btn_ThoatKH.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_ThoatKH.Location = new System.Drawing.Point(216, 281);
             this.btn_ThoatKH.Name = "btn_ThoatKH";
-            this.btn_ThoatKH.Size = new System.Drawing.Size(75, 34);
+            this.btn_ThoatKH.Size = new System.Drawing.Size(95, 53);
             this.btn_ThoatKH.TabIndex = 5;
-            this.btn_ThoatKH.Text = "Thoat";
+            this.btn_ThoatKH.Text = "Thoát";
+            this.btn_ThoatKH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ThoatKH.UseVisualStyleBackColor = true;
             this.btn_ThoatKH.Click += new System.EventHandler(this.btn_ThoatKH_Click);
             // 
@@ -531,11 +544,14 @@
             // btn_LuuKH
             // 
             this.btn_LuuKH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_LuuKH.Location = new System.Drawing.Point(40, 292);
+            this.btn_LuuKH.Image = ((System.Drawing.Image)(resources.GetObject("btn_LuuKH.Image")));
+            this.btn_LuuKH.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btn_LuuKH.Location = new System.Drawing.Point(52, 281);
             this.btn_LuuKH.Name = "btn_LuuKH";
             this.btn_LuuKH.Size = new System.Drawing.Size(98, 53);
             this.btn_LuuKH.TabIndex = 2;
             this.btn_LuuKH.Text = "Lưu";
+            this.btn_LuuKH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_LuuKH.UseVisualStyleBackColor = true;
             this.btn_LuuKH.Click += new System.EventHandler(this.btn_LuuKH_Click);
             // 
@@ -571,9 +587,9 @@
             this.panel_Detail.Controls.Add(this.btn_luuDetail);
             this.panel_Detail.Controls.Add(this.txb_Note);
             this.panel_Detail.Controls.Add(this.label1);
-            this.panel_Detail.Location = new System.Drawing.Point(264, 51);
+            this.panel_Detail.Location = new System.Drawing.Point(240, 514);
             this.panel_Detail.Name = "panel_Detail";
-            this.panel_Detail.Size = new System.Drawing.Size(262, 64);
+            this.panel_Detail.Size = new System.Drawing.Size(262, 41);
             this.panel_Detail.TabIndex = 3;
             // 
             // btn_ThoatDetail

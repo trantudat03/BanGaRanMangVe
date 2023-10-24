@@ -107,6 +107,9 @@
             this.btn_ThemLoaiSP = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -135,6 +138,9 @@
             this.panel13.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Them
@@ -337,6 +343,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel5.Controls.Add(this.pictureBox3);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(3, 4);
@@ -350,7 +357,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(20, 9);
+            this.label2.Location = new System.Drawing.Point(53, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(225, 31);
             this.label2.TabIndex = 2;
@@ -385,9 +392,9 @@
             // 
             this.panel7.Controls.Add(this.groupBox_Sua);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(0, 307);
+            this.panel7.Location = new System.Drawing.Point(0, 306);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1022, 350);
+            this.panel7.Size = new System.Drawing.Size(1022, 351);
             this.panel7.TabIndex = 17;
             // 
             // groupBox_Sua
@@ -414,15 +421,19 @@
             // btn_LuuSua
             // 
             this.btn_LuuSua.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_LuuSua.BackColor = System.Drawing.Color.Green;
+            this.btn_LuuSua.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btn_LuuSua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_LuuSua.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_LuuSua.ForeColor = System.Drawing.Color.White;
-            this.btn_LuuSua.Location = new System.Drawing.Point(561, 200);
+            this.btn_LuuSua.Image = ((System.Drawing.Image)(resources.GetObject("btn_LuuSua.Image")));
+            this.btn_LuuSua.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btn_LuuSua.Location = new System.Drawing.Point(555, 191);
             this.btn_LuuSua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_LuuSua.Name = "btn_LuuSua";
-            this.btn_LuuSua.Size = new System.Drawing.Size(109, 49);
+            this.btn_LuuSua.Size = new System.Drawing.Size(115, 55);
             this.btn_LuuSua.TabIndex = 19;
             this.btn_LuuSua.Text = "Lưu";
+            this.btn_LuuSua.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_LuuSua.UseVisualStyleBackColor = false;
             this.btn_LuuSua.Click += new System.EventHandler(this.btn_LuuSua_Click);
             // 
@@ -569,7 +580,7 @@
             // 
             this.panel6.Controls.Add(this.dgv_DanhSach);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 49);
+            this.panel6.Location = new System.Drawing.Point(0, 48);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1022, 258);
             this.panel6.TabIndex = 16;
@@ -648,13 +659,14 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.label15);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1022, 49);
+            this.panel4.Size = new System.Drawing.Size(1022, 48);
             this.panel4.TabIndex = 15;
             // 
             // label15
@@ -662,7 +674,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(14, 7);
+            this.label15.Location = new System.Drawing.Point(51, 7);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(295, 31);
             this.label15.TabIndex = 2;
@@ -813,9 +825,9 @@
             this.panel15.Controls.Add(this.lbl_thongBaoPage3);
             this.panel15.Controls.Add(this.dgv_LoaiSanPham);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(0, 49);
+            this.panel15.Location = new System.Drawing.Point(0, 42);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(961, 368);
+            this.panel15.Size = new System.Drawing.Size(961, 375);
             this.panel15.TabIndex = 18;
             // 
             // lbl_thongBaoPage3
@@ -845,7 +857,7 @@
             this.dgv_LoaiSanPham.Name = "dgv_LoaiSanPham";
             this.dgv_LoaiSanPham.RowHeadersWidth = 51;
             this.dgv_LoaiSanPham.RowTemplate.Height = 24;
-            this.dgv_LoaiSanPham.Size = new System.Drawing.Size(928, 320);
+            this.dgv_LoaiSanPham.Size = new System.Drawing.Size(928, 327);
             this.dgv_LoaiSanPham.TabIndex = 0;
             this.dgv_LoaiSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_LoaiSanPham_CellClick);
             // 
@@ -894,15 +906,19 @@
             // btn_XacNhan
             // 
             this.btn_XacNhan.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_XacNhan.BackColor = System.Drawing.Color.Green;
+            this.btn_XacNhan.BackColor = System.Drawing.Color.LimeGreen;
             this.btn_XacNhan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_XacNhan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XacNhan.ForeColor = System.Drawing.Color.White;
+            this.btn_XacNhan.Image = ((System.Drawing.Image)(resources.GetObject("btn_XacNhan.Image")));
+            this.btn_XacNhan.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btn_XacNhan.Location = new System.Drawing.Point(89, 98);
             this.btn_XacNhan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_XacNhan.Name = "btn_XacNhan";
-            this.btn_XacNhan.Size = new System.Drawing.Size(118, 61);
+            this.btn_XacNhan.Size = new System.Drawing.Size(134, 61);
             this.btn_XacNhan.TabIndex = 19;
             this.btn_XacNhan.Text = "Xác Nhận";
+            this.btn_XacNhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_XacNhan.UseVisualStyleBackColor = false;
             this.btn_XacNhan.Click += new System.EventHandler(this.btn_XacNhan_Click);
             // 
@@ -929,12 +945,13 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel13.Controls.Add(this.pictureBox2);
             this.panel13.Controls.Add(this.label16);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(961, 49);
+            this.panel13.Size = new System.Drawing.Size(961, 42);
             this.panel13.TabIndex = 16;
             // 
             // label16
@@ -942,7 +959,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(10, 15);
+            this.label16.Location = new System.Drawing.Point(51, 8);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(357, 31);
             this.label16.TabIndex = 2;
@@ -1024,6 +1041,34 @@
             this.panel2.Size = new System.Drawing.Size(1296, 717);
             this.panel2.TabIndex = 20;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(44, 50);
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
+            // 
             // FQuanLySanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -1071,6 +1116,9 @@
             this.panel13.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1154,5 +1202,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
