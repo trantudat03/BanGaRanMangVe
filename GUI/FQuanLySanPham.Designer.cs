@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FQuanLySanPham));
             this.btn_Them = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -35,6 +36,7 @@
             this.lbl_ThongBao = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.cmb_TrangThai = new System.Windows.Forms.ComboBox();
+            this.PB_AnhSanPham = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.nud_HanSanPham = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
@@ -53,6 +55,7 @@
             this.btn_LuuSua = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.cmb_SuaTrangThai = new System.Windows.Forms.ComboBox();
+            this.pcb_SuaAnhSP = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.nud_SuaHanSP = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
@@ -82,6 +85,7 @@
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lbl_TenSanPham = new System.Windows.Forms.Label();
+            this.pcb_HienThiAnhSp = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -103,18 +107,17 @@
             this.btn_ThemLoaiSP = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.PB_AnhSanPham = new System.Windows.Forms.PictureBox();
-            this.pcb_SuaAnhSP = new System.Windows.Forms.PictureBox();
-            this.pcb_HienThiAnhSp = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_AnhSanPham)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_HanSanPham)).BeginInit();
             this.panel5.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
             this.groupBox_Sua.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_SuaAnhSP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_SuaHanSP)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSach)).BeginInit();
@@ -122,6 +125,7 @@
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_HienThiAnhSp)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -131,19 +135,20 @@
             this.panel13.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_AnhSanPham)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_SuaAnhSP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_HienThiAnhSp)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Them
             // 
-            this.btn_Them.Location = new System.Drawing.Point(671, 383);
+            this.btn_Them.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Them.Image = ((System.Drawing.Image)(resources.GetObject("btn_Them.Image")));
+            this.btn_Them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Them.Location = new System.Drawing.Point(671, 374);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(130, 63);
+            this.btn_Them.Size = new System.Drawing.Size(138, 71);
             this.btn_Them.TabIndex = 3;
             this.btn_Them.Text = "Thêm";
+            this.btn_Them.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Them.UseVisualStyleBackColor = true;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
@@ -157,7 +162,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1268, 709);
+            this.tabControl1.Size = new System.Drawing.Size(1268, 697);
             this.tabControl1.TabIndex = 4;
             // 
             // tabPage1
@@ -168,7 +173,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1260, 677);
+            this.tabPage1.Size = new System.Drawing.Size(1260, 665);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thêm Sản Phẩm";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -208,108 +213,124 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(556, 293);
+            this.label8.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(556, 288);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(119, 24);
+            this.label8.Size = new System.Drawing.Size(139, 27);
             this.label8.TabIndex = 18;
             this.label8.Text = "Trạng thái :";
             // 
             // cmb_TrangThai
             // 
-            this.cmb_TrangThai.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_TrangThai.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_TrangThai.FormattingEnabled = true;
-            this.cmb_TrangThai.Location = new System.Drawing.Point(738, 288);
+            this.cmb_TrangThai.Location = new System.Drawing.Point(740, 286);
             this.cmb_TrangThai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmb_TrangThai.Name = "cmb_TrangThai";
-            this.cmb_TrangThai.Size = new System.Drawing.Size(178, 29);
+            this.cmb_TrangThai.Size = new System.Drawing.Size(178, 34);
             this.cmb_TrangThai.TabIndex = 17;
+            // 
+            // PB_AnhSanPham
+            // 
+            this.PB_AnhSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PB_AnhSanPham.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_AnhSanPham.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PB_AnhSanPham.Image = global::GUI.Properties.Resources.imgIcon;
+            this.PB_AnhSanPham.Location = new System.Drawing.Point(191, 288);
+            this.PB_AnhSanPham.Name = "PB_AnhSanPham";
+            this.PB_AnhSanPham.Size = new System.Drawing.Size(142, 109);
+            this.PB_AnhSanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_AnhSanPham.TabIndex = 16;
+            this.PB_AnhSanPham.TabStop = false;
+            this.PB_AnhSanPham.Click += new System.EventHandler(this.PB_AnhSanPham_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(5, 288);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(152, 24);
+            this.label7.Size = new System.Drawing.Size(180, 27);
             this.label7.TabIndex = 15;
             this.label7.Text = "Ảnh sản phẩm:";
             // 
             // nud_HanSanPham
             // 
-            this.nud_HanSanPham.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_HanSanPham.Location = new System.Drawing.Point(738, 176);
+            this.nud_HanSanPham.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nud_HanSanPham.Location = new System.Drawing.Point(740, 160);
             this.nud_HanSanPham.Name = "nud_HanSanPham";
-            this.nud_HanSanPham.Size = new System.Drawing.Size(178, 28);
+            this.nud_HanSanPham.Size = new System.Drawing.Size(178, 34);
             this.nud_HanSanPham.TabIndex = 14;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(556, 180);
+            this.label6.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(556, 161);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(152, 24);
+            this.label6.Size = new System.Drawing.Size(178, 27);
             this.label6.TabIndex = 13;
             this.label6.Text = "Hạn sản phẩm:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 50);
+            this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(5, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(155, 24);
+            this.label3.Size = new System.Drawing.Size(181, 27);
             this.label3.TabIndex = 9;
             this.label3.Text = "Loại sản phẩm:";
             // 
             // txb_GiaSanPham
             // 
             this.txb_GiaSanPham.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txb_GiaSanPham.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_GiaSanPham.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_GiaSanPham.Location = new System.Drawing.Point(738, 45);
             this.txb_GiaSanPham.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txb_GiaSanPham.Name = "txb_GiaSanPham";
-            this.txb_GiaSanPham.Size = new System.Drawing.Size(178, 28);
+            this.txb_GiaSanPham.Size = new System.Drawing.Size(178, 34);
             this.txb_GiaSanPham.TabIndex = 12;
             // 
             // cmb_LoaiSanPham
             // 
-            this.cmb_LoaiSanPham.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_LoaiSanPham.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_LoaiSanPham.FormattingEnabled = true;
-            this.cmb_LoaiSanPham.Location = new System.Drawing.Point(190, 45);
+            this.cmb_LoaiSanPham.Location = new System.Drawing.Point(191, 40);
             this.cmb_LoaiSanPham.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmb_LoaiSanPham.Name = "cmb_LoaiSanPham";
-            this.cmb_LoaiSanPham.Size = new System.Drawing.Size(178, 29);
+            this.cmb_LoaiSanPham.Size = new System.Drawing.Size(197, 34);
             this.cmb_LoaiSanPham.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(556, 50);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 24);
+            this.label5.Size = new System.Drawing.Size(171, 27);
             this.label5.TabIndex = 11;
             this.label5.Text = "Giá sản phẩm:";
             // 
             // txb_TenSanPham
             // 
             this.txb_TenSanPham.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txb_TenSanPham.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_TenSanPham.Location = new System.Drawing.Point(190, 176);
+            this.txb_TenSanPham.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_TenSanPham.Location = new System.Drawing.Point(191, 160);
             this.txb_TenSanPham.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txb_TenSanPham.Name = "txb_TenSanPham";
-            this.txb_TenSanPham.Size = new System.Drawing.Size(178, 28);
+            this.txb_TenSanPham.Size = new System.Drawing.Size(197, 34);
             this.txb_TenSanPham.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 180);
+            this.label4.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(5, 161);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 24);
+            this.label4.Size = new System.Drawing.Size(176, 27);
             this.label4.TabIndex = 10;
             this.label4.Text = "Tên sản phẩm:";
             // 
@@ -327,11 +348,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 13);
+            this.label2.Location = new System.Drawing.Point(20, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 23);
+            this.label2.Size = new System.Drawing.Size(225, 31);
             this.label2.TabIndex = 2;
             this.label2.Text = "Thêm Sản Phẩm";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -344,7 +365,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1260, 677);
+            this.tabPage2.Size = new System.Drawing.Size(1260, 665);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Danh Sách Sản Phẩm";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -357,16 +378,16 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1022, 669);
+            this.panel3.Size = new System.Drawing.Size(1022, 657);
             this.panel3.TabIndex = 5;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.groupBox_Sua);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(0, 372);
+            this.panel7.Location = new System.Drawing.Point(0, 307);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1022, 297);
+            this.panel7.Size = new System.Drawing.Size(1022, 350);
             this.panel7.TabIndex = 17;
             // 
             // groupBox_Sua
@@ -384,10 +405,9 @@
             this.groupBox_Sua.Controls.Add(this.label13);
             this.groupBox_Sua.Controls.Add(this.txb_SuaTenSP);
             this.groupBox_Sua.Controls.Add(this.label14);
-            this.groupBox_Sua.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox_Sua.Location = new System.Drawing.Point(0, 0);
+            this.groupBox_Sua.Location = new System.Drawing.Point(0, 6);
             this.groupBox_Sua.Name = "groupBox_Sua";
-            this.groupBox_Sua.Size = new System.Drawing.Size(1022, 297);
+            this.groupBox_Sua.Size = new System.Drawing.Size(1022, 319);
             this.groupBox_Sua.TabIndex = 14;
             this.groupBox_Sua.TabStop = false;
             // 
@@ -397,7 +417,7 @@
             this.btn_LuuSua.BackColor = System.Drawing.Color.Green;
             this.btn_LuuSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_LuuSua.ForeColor = System.Drawing.Color.White;
-            this.btn_LuuSua.Location = new System.Drawing.Point(555, 196);
+            this.btn_LuuSua.Location = new System.Drawing.Point(561, 200);
             this.btn_LuuSua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_LuuSua.Name = "btn_LuuSua";
             this.btn_LuuSua.Size = new System.Drawing.Size(109, 49);
@@ -426,11 +446,27 @@
             this.cmb_SuaTrangThai.Size = new System.Drawing.Size(178, 29);
             this.cmb_SuaTrangThai.TabIndex = 17;
             // 
+            // pcb_SuaAnhSP
+            // 
+            this.pcb_SuaAnhSP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pcb_SuaAnhSP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcb_SuaAnhSP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcb_SuaAnhSP.Image = global::GUI.Properties.Resources.imgIcon;
+            this.pcb_SuaAnhSP.Location = new System.Drawing.Point(190, 127);
+            this.pcb_SuaAnhSP.Name = "pcb_SuaAnhSP";
+            this.pcb_SuaAnhSP.Size = new System.Drawing.Size(174, 119);
+            this.pcb_SuaAnhSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcb_SuaAnhSP.TabIndex = 16;
+            this.pcb_SuaAnhSP.TabStop = false;
+            this.pcb_SuaAnhSP.Click += new System.EventHandler(this.pcb_SuaAnhSP_Click);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 148);
+            this.label10.Location = new System.Drawing.Point(9, 132);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(152, 24);
             this.label10.TabIndex = 15;
@@ -535,12 +571,13 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 49);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1022, 323);
+            this.panel6.Size = new System.Drawing.Size(1022, 258);
             this.panel6.TabIndex = 16;
             // 
             // dgv_DanhSach
             // 
             this.dgv_DanhSach.AllowUserToAddRows = false;
+            this.dgv_DanhSach.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_DanhSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_DanhSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -550,13 +587,12 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dgv_DanhSach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_DanhSach.Location = new System.Drawing.Point(0, 0);
             this.dgv_DanhSach.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgv_DanhSach.Name = "dgv_DanhSach";
             this.dgv_DanhSach.RowHeadersWidth = 51;
             this.dgv_DanhSach.RowTemplate.Height = 24;
-            this.dgv_DanhSach.Size = new System.Drawing.Size(1022, 323);
+            this.dgv_DanhSach.Size = new System.Drawing.Size(1022, 257);
             this.dgv_DanhSach.TabIndex = 3;
             this.dgv_DanhSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DanhSach_CellClick);
             // 
@@ -597,10 +633,10 @@
             // 
             // Column6
             // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column6.HeaderText = "Loại Sản Phẩm";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
             // 
             // Column7
             // 
@@ -614,6 +650,7 @@
             this.panel4.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel4.Controls.Add(this.label15);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
@@ -623,11 +660,11 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(12, 13);
+            this.label15.Location = new System.Drawing.Point(14, 7);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(201, 23);
+            this.label15.Size = new System.Drawing.Size(295, 31);
             this.label15.TabIndex = 2;
             this.label15.Text = "Danh Sách Sản Phẩm";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -639,7 +676,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(1025, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(232, 669);
+            this.panel1.Size = new System.Drawing.Size(232, 657);
             this.panel1.TabIndex = 4;
             // 
             // panel9
@@ -652,7 +689,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(232, 429);
+            this.panel9.Size = new System.Drawing.Size(232, 375);
             this.panel9.TabIndex = 24;
             // 
             // txb_SearchDGV
@@ -678,12 +715,16 @@
             // 
             // btn_Sua
             // 
-            this.btn_Sua.Location = new System.Drawing.Point(10, 117);
+            this.btn_Sua.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Sua.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sua.Image")));
+            this.btn_Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Sua.Location = new System.Drawing.Point(54, 130);
             this.btn_Sua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(130, 63);
+            this.btn_Sua.Size = new System.Drawing.Size(116, 63);
             this.btn_Sua.TabIndex = 3;
             this.btn_Sua.Text = "Sửa";
+            this.btn_Sua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Sua.UseVisualStyleBackColor = true;
             this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
@@ -699,12 +740,12 @@
             // 
             // btn_Xoa
             // 
-            this.btn_Xoa.Location = new System.Drawing.Point(10, 232);
+            this.btn_Xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.Image")));
+            this.btn_Xoa.Location = new System.Drawing.Point(54, 232);
             this.btn_Xoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(130, 63);
+            this.btn_Xoa.Size = new System.Drawing.Size(116, 63);
             this.btn_Xoa.TabIndex = 4;
-            this.btn_Xoa.Text = "Xóa";
             this.btn_Xoa.UseVisualStyleBackColor = true;
             this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
@@ -713,9 +754,9 @@
             this.panel8.Controls.Add(this.lbl_TenSanPham);
             this.panel8.Controls.Add(this.pcb_HienThiAnhSp);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel8.Location = new System.Drawing.Point(0, 429);
+            this.panel8.Location = new System.Drawing.Point(0, 375);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(232, 240);
+            this.panel8.Size = new System.Drawing.Size(232, 282);
             this.panel8.TabIndex = 23;
             // 
             // lbl_TenSanPham
@@ -729,6 +770,21 @@
             this.lbl_TenSanPham.TabIndex = 21;
             this.lbl_TenSanPham.Text = "ten sp";
             // 
+            // pcb_HienThiAnhSp
+            // 
+            this.pcb_HienThiAnhSp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pcb_HienThiAnhSp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcb_HienThiAnhSp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcb_HienThiAnhSp.Image = global::GUI.Properties.Resources.imgIcon;
+            this.pcb_HienThiAnhSp.Location = new System.Drawing.Point(10, 30);
+            this.pcb_HienThiAnhSp.Name = "pcb_HienThiAnhSp";
+            this.pcb_HienThiAnhSp.Size = new System.Drawing.Size(174, 154);
+            this.pcb_HienThiAnhSp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcb_HienThiAnhSp.TabIndex = 20;
+            this.pcb_HienThiAnhSp.TabStop = false;
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.panel11);
@@ -736,7 +792,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 28);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1260, 677);
+            this.tabPage3.Size = new System.Drawing.Size(1260, 665);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Loại Sản Phẩm";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -749,7 +805,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(961, 680);
+            this.panel11.Size = new System.Drawing.Size(961, 665);
             this.panel11.TabIndex = 3;
             // 
             // panel15
@@ -759,7 +815,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel15.Location = new System.Drawing.Point(0, 49);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(961, 383);
+            this.panel15.Size = new System.Drawing.Size(961, 368);
             this.panel15.TabIndex = 18;
             // 
             // lbl_thongBaoPage3
@@ -779,45 +835,46 @@
             this.dgv_LoaiSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_LoaiSanPham.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgv_LoaiSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_LoaiSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column8,
             this.Column9,
             this.Column10});
-            this.dgv_LoaiSanPham.Location = new System.Drawing.Point(89, 0);
+            this.dgv_LoaiSanPham.Location = new System.Drawing.Point(16, 17);
             this.dgv_LoaiSanPham.Name = "dgv_LoaiSanPham";
             this.dgv_LoaiSanPham.RowHeadersWidth = 51;
             this.dgv_LoaiSanPham.RowTemplate.Height = 24;
-            this.dgv_LoaiSanPham.Size = new System.Drawing.Size(441, 187);
+            this.dgv_LoaiSanPham.Size = new System.Drawing.Size(928, 320);
             this.dgv_LoaiSanPham.TabIndex = 0;
             this.dgv_LoaiSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_LoaiSanPham_CellClick);
             // 
             // Column8
             // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column8.HeaderText = "Mã Loại";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
             // 
             // Column9
             // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column9.HeaderText = "Tên Loại";
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
-            this.Column9.Width = 125;
             // 
             // Column10
             // 
+            this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column10.HeaderText = "Tổng Sản Phẩm";
             this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
-            this.Column10.Width = 135;
             // 
             // panel14
             // 
             this.panel14.Controls.Add(this.groupBoxLoaiSP);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel14.Location = new System.Drawing.Point(0, 432);
+            this.panel14.Location = new System.Drawing.Point(0, 417);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(961, 248);
             this.panel14.TabIndex = 17;
@@ -827,7 +884,7 @@
             this.groupBoxLoaiSP.Controls.Add(this.btn_XacNhan);
             this.groupBoxLoaiSP.Controls.Add(this.txb_LoaiSPTen);
             this.groupBoxLoaiSP.Controls.Add(this.label22);
-            this.groupBoxLoaiSP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxLoaiSP.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBoxLoaiSP.Location = new System.Drawing.Point(0, 0);
             this.groupBoxLoaiSP.Name = "groupBoxLoaiSP";
             this.groupBoxLoaiSP.Size = new System.Drawing.Size(961, 248);
@@ -883,11 +940,11 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(12, 13);
+            this.label16.Location = new System.Drawing.Point(10, 15);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(244, 23);
+            this.label16.Size = new System.Drawing.Size(357, 31);
             this.label16.TabIndex = 2;
             this.label16.Text = "Danh Sách Loại Sản Phẩm";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -900,39 +957,51 @@
             this.panel12.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel12.Location = new System.Drawing.Point(961, 0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(299, 680);
+            this.panel12.Size = new System.Drawing.Size(299, 665);
             this.panel12.TabIndex = 2;
             // 
             // btn_XoaLoaiSP
             // 
-            this.btn_XoaLoaiSP.Location = new System.Drawing.Point(37, 281);
+            this.btn_XoaLoaiSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XoaLoaiSP.Image = ((System.Drawing.Image)(resources.GetObject("btn_XoaLoaiSP.Image")));
+            this.btn_XoaLoaiSP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_XoaLoaiSP.Location = new System.Drawing.Point(112, 264);
             this.btn_XoaLoaiSP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_XoaLoaiSP.Name = "btn_XoaLoaiSP";
-            this.btn_XoaLoaiSP.Size = new System.Drawing.Size(130, 63);
+            this.btn_XoaLoaiSP.Size = new System.Drawing.Size(113, 63);
             this.btn_XoaLoaiSP.TabIndex = 6;
-            this.btn_XoaLoaiSP.Text = "Xóa";
+            this.btn_XoaLoaiSP.Text = "Xoá";
+            this.btn_XoaLoaiSP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_XoaLoaiSP.UseVisualStyleBackColor = true;
             this.btn_XoaLoaiSP.Click += new System.EventHandler(this.btn_XoaLoaiSP_Click);
             // 
             // btn_SuaLoaiSanPham
             // 
-            this.btn_SuaLoaiSanPham.Location = new System.Drawing.Point(37, 170);
+            this.btn_SuaLoaiSanPham.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SuaLoaiSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btn_SuaLoaiSanPham.Image")));
+            this.btn_SuaLoaiSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_SuaLoaiSanPham.Location = new System.Drawing.Point(112, 157);
             this.btn_SuaLoaiSanPham.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_SuaLoaiSanPham.Name = "btn_SuaLoaiSanPham";
-            this.btn_SuaLoaiSanPham.Size = new System.Drawing.Size(130, 63);
+            this.btn_SuaLoaiSanPham.Size = new System.Drawing.Size(113, 63);
             this.btn_SuaLoaiSanPham.TabIndex = 5;
             this.btn_SuaLoaiSanPham.Text = "Sửa";
+            this.btn_SuaLoaiSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_SuaLoaiSanPham.UseVisualStyleBackColor = true;
             this.btn_SuaLoaiSanPham.Click += new System.EventHandler(this.btn_SuaLoaiSanPham_Click);
             // 
             // btn_ThemLoaiSP
             // 
-            this.btn_ThemLoaiSP.Location = new System.Drawing.Point(37, 49);
+            this.btn_ThemLoaiSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThemLoaiSP.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThemLoaiSP.Image")));
+            this.btn_ThemLoaiSP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ThemLoaiSP.Location = new System.Drawing.Point(112, 49);
             this.btn_ThemLoaiSP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_ThemLoaiSP.Name = "btn_ThemLoaiSP";
-            this.btn_ThemLoaiSP.Size = new System.Drawing.Size(130, 63);
+            this.btn_ThemLoaiSP.Size = new System.Drawing.Size(113, 63);
             this.btn_ThemLoaiSP.TabIndex = 4;
             this.btn_ThemLoaiSP.Text = "Thêm";
+            this.btn_ThemLoaiSP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_ThemLoaiSP.UseVisualStyleBackColor = true;
             this.btn_ThemLoaiSP.Click += new System.EventHandler(this.btn_ThemLoaiSP_Click);
             // 
@@ -941,7 +1010,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 28);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1260, 677);
+            this.tabPage4.Size = new System.Drawing.Size(1260, 665);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Hưỡng dẫn";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -954,53 +1023,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1296, 717);
             this.panel2.TabIndex = 20;
-            // 
-            // PB_AnhSanPham
-            // 
-            this.PB_AnhSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PB_AnhSanPham.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_AnhSanPham.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PB_AnhSanPham.Image = global::GUI.Properties.Resources.imgIcon;
-            this.PB_AnhSanPham.Location = new System.Drawing.Point(178, 288);
-            this.PB_AnhSanPham.Name = "PB_AnhSanPham";
-            this.PB_AnhSanPham.Size = new System.Drawing.Size(114, 83);
-            this.PB_AnhSanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_AnhSanPham.TabIndex = 16;
-            this.PB_AnhSanPham.TabStop = false;
-            this.PB_AnhSanPham.Click += new System.EventHandler(this.PB_AnhSanPham_Click);
-            // 
-            // pcb_SuaAnhSP
-            // 
-            this.pcb_SuaAnhSP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pcb_SuaAnhSP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pcb_SuaAnhSP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcb_SuaAnhSP.Image = global::GUI.Properties.Resources.imgIcon;
-            this.pcb_SuaAnhSP.Location = new System.Drawing.Point(190, 158);
-            this.pcb_SuaAnhSP.Name = "pcb_SuaAnhSP";
-            this.pcb_SuaAnhSP.Size = new System.Drawing.Size(174, 97);
-            this.pcb_SuaAnhSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcb_SuaAnhSP.TabIndex = 16;
-            this.pcb_SuaAnhSP.TabStop = false;
-            this.pcb_SuaAnhSP.Click += new System.EventHandler(this.pcb_SuaAnhSP_Click);
-            // 
-            // pcb_HienThiAnhSp
-            // 
-            this.pcb_HienThiAnhSp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pcb_HienThiAnhSp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pcb_HienThiAnhSp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcb_HienThiAnhSp.Image = global::GUI.Properties.Resources.imgIcon;
-            this.pcb_HienThiAnhSp.Location = new System.Drawing.Point(10, 32);
-            this.pcb_HienThiAnhSp.Name = "pcb_HienThiAnhSp";
-            this.pcb_HienThiAnhSp.Size = new System.Drawing.Size(174, 144);
-            this.pcb_HienThiAnhSp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcb_HienThiAnhSp.TabIndex = 20;
-            this.pcb_HienThiAnhSp.TabStop = false;
             // 
             // FQuanLySanPham
             // 
@@ -1016,6 +1038,7 @@
             this.tabPage1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_AnhSanPham)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_HanSanPham)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -1024,6 +1047,7 @@
             this.panel7.ResumeLayout(false);
             this.groupBox_Sua.ResumeLayout(false);
             this.groupBox_Sua.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_SuaAnhSP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_SuaHanSP)).EndInit();
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSach)).EndInit();
@@ -1034,6 +1058,7 @@
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_HienThiAnhSp)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
@@ -1046,9 +1071,6 @@
             this.panel13.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PB_AnhSanPham)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_SuaAnhSP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_HienThiAnhSp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1102,7 +1124,6 @@
         private System.Windows.Forms.Button btn_LuuSua;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
@@ -1121,10 +1142,10 @@
         private System.Windows.Forms.Button btn_XoaLoaiSP;
         private System.Windows.Forms.Button btn_SuaLoaiSanPham;
         private System.Windows.Forms.Button btn_ThemLoaiSP;
+        private System.Windows.Forms.Label lbl_thongBaoPage3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.Label lbl_thongBaoPage3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -1132,5 +1153,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.Panel panel7;
     }
 }

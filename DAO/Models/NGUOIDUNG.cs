@@ -48,8 +48,6 @@ namespace DAO.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DONHANG> DONHANGs { get; set; }
 
-        public virtual TRANGTHAINGUOIDUNG TRANGTHAINGUOIDUNG { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<THONGBAOHANGNGAY> THONGBAOHANGNGAYs { get; set; }
     }

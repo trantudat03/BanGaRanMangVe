@@ -28,31 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDangNhap));
             this.txb_TenDangNhap = new System.Windows.Forms.TextBox();
-            this.btn_DangNhap = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txb_MatKhau = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbl_ThongBaoTDN = new System.Windows.Forms.Label();
             this.lbl_ThongBao = new System.Windows.Forms.Label();
-            this.btn_Thoat = new System.Windows.Forms.Button();
             this.lbl_QuenMK = new System.Windows.Forms.Label();
+            this.btn_DangNhap = new System.Windows.Forms.Button();
+            this.btn_Thoat = new System.Windows.Forms.Button();
             this.btn_eyePass = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_eyePass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(268, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Đăng nhập";
             // 
             // txb_TenDangNhap
             // 
@@ -65,17 +57,6 @@
             this.txb_TenDangNhap.Name = "txb_TenDangNhap";
             this.txb_TenDangNhap.Size = new System.Drawing.Size(286, 34);
             this.txb_TenDangNhap.TabIndex = 1;
-            // 
-            // btn_DangNhap
-            // 
-            this.btn_DangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_DangNhap.Location = new System.Drawing.Point(24, 322);
-            this.btn_DangNhap.Name = "btn_DangNhap";
-            this.btn_DangNhap.Size = new System.Drawing.Size(144, 56);
-            this.btn_DangNhap.TabIndex = 2;
-            this.btn_DangNhap.Text = "Đăng nhập";
-            this.btn_DangNhap.UseVisualStyleBackColor = true;
-            this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
             // 
             // label2
             // 
@@ -121,9 +102,9 @@
             this.groupBox1.Controls.Add(this.txb_MatKhau);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txb_TenDangNhap);
-            this.groupBox1.Location = new System.Drawing.Point(276, 170);
+            this.groupBox1.Location = new System.Drawing.Point(162, 146);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(380, 401);
+            this.groupBox1.Size = new System.Drawing.Size(371, 422);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
@@ -147,34 +128,47 @@
             this.lbl_ThongBao.TabIndex = 11;
             this.lbl_ThongBao.Text = "Thông báo";
             // 
-            // btn_Thoat
-            // 
-            this.btn_Thoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Thoat.Location = new System.Drawing.Point(277, 345);
-            this.btn_Thoat.Name = "btn_Thoat";
-            this.btn_Thoat.Size = new System.Drawing.Size(82, 33);
-            this.btn_Thoat.TabIndex = 10;
-            this.btn_Thoat.Text = "Thoát";
-            this.btn_Thoat.UseVisualStyleBackColor = true;
-            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
-            // 
             // lbl_QuenMK
             // 
             this.lbl_QuenMK.AutoSize = true;
             this.lbl_QuenMK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_QuenMK.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_QuenMK.Location = new System.Drawing.Point(231, 287);
+            this.lbl_QuenMK.Location = new System.Drawing.Point(220, 241);
             this.lbl_QuenMK.Name = "lbl_QuenMK";
             this.lbl_QuenMK.Size = new System.Drawing.Size(128, 19);
             this.lbl_QuenMK.TabIndex = 9;
             this.lbl_QuenMK.Text = "Quên mật khẩu?";
             this.lbl_QuenMK.Click += new System.EventHandler(this.lbl_QuenMK_Click);
             // 
+            // btn_DangNhap
+            // 
+            this.btn_DangNhap.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_DangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DangNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangNhap.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_DangNhap.Location = new System.Drawing.Point(118, 277);
+            this.btn_DangNhap.Name = "btn_DangNhap";
+            this.btn_DangNhap.Size = new System.Drawing.Size(134, 70);
+            this.btn_DangNhap.TabIndex = 2;
+            this.btn_DangNhap.Text = "Đăng  Nhập";
+            this.btn_DangNhap.UseVisualStyleBackColor = false;
+            this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
+            // 
+            // btn_Thoat
+            // 
+            this.btn_Thoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Thoat.Image = global::GUI.Properties.Resources.c;
+            this.btn_Thoat.Location = new System.Drawing.Point(133, 371);
+            this.btn_Thoat.Name = "btn_Thoat";
+            this.btn_Thoat.Size = new System.Drawing.Size(100, 45);
+            this.btn_Thoat.TabIndex = 10;
+            this.btn_Thoat.UseVisualStyleBackColor = true;
+            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
+            // 
             // btn_eyePass
             // 
             this.btn_eyePass.BackColor = System.Drawing.Color.White;
             this.btn_eyePass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_eyePass.Image = global::GUI.Properties.Resources.eyePass;
             this.btn_eyePass.Location = new System.Drawing.Point(274, 190);
             this.btn_eyePass.Name = "btn_eyePass";
             this.btn_eyePass.Size = new System.Drawing.Size(33, 29);
@@ -183,15 +177,30 @@
             this.btn_eyePass.TabStop = false;
             this.btn_eyePass.Click += new System.EventHandler(this.btn_eyePass_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(295, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(136, 136);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // FDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(877, 604);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(722, 616);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FDangNhap";
             this.Text = "Đăng nhập";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FDangNhap_FormClosed);
@@ -199,14 +208,12 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_eyePass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txb_TenDangNhap;
         private System.Windows.Forms.Button btn_DangNhap;
         private System.Windows.Forms.Label label2;
@@ -218,5 +225,6 @@
         private System.Windows.Forms.Label lbl_QuenMK;
         private System.Windows.Forms.Label lbl_ThongBaoTDN;
         private System.Windows.Forms.Label lbl_ThongBao;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

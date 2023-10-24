@@ -42,7 +42,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -212,6 +214,12 @@
     <None Include="Resources\logo2.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\c.png" />
+    <None Include="Resources\out.png" />
+    <None Include="Resources\b.jpg" />
+    <None Include="Resources\a.jpg" />
+    <None Include="Resources\login-icon-in-trendy-flat-style-isolated-on-white-background-approach-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-flat-style-for-graphic-design-vector.jpg" />
+    <None Include="Resources\pngtree-logout-icon-vectors-png-image_1737872.jpg" />
     <None Include="Resources\group %281%29.png" />
     <None Include="Resources\iconKFC.png" />
     <None Include="Resources\iconDonHang.png" />
