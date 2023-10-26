@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FHuyDon));
             this.label1 = new System.Windows.Forms.Label();
             this.txb_LyDo = new System.Windows.Forms.TextBox();
             this.btn_Submit = new System.Windows.Forms.Button();
@@ -55,13 +56,19 @@
             // 
             // btn_Submit
             // 
-            this.btn_Submit.Location = new System.Drawing.Point(93, 343);
+            this.btn_Submit.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn_Submit.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Submit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Submit.Image = ((System.Drawing.Image)(resources.GetObject("btn_Submit.Image")));
+            this.btn_Submit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Submit.Location = new System.Drawing.Point(93, 331);
             this.btn_Submit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Submit.Name = "btn_Submit";
-            this.btn_Submit.Size = new System.Drawing.Size(126, 40);
+            this.btn_Submit.Size = new System.Drawing.Size(138, 52);
             this.btn_Submit.TabIndex = 2;
-            this.btn_Submit.Text = "Ok";
-            this.btn_Submit.UseVisualStyleBackColor = true;
+            this.btn_Submit.Text = "Xác Nhận";
+            this.btn_Submit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Submit.UseVisualStyleBackColor = false;
             this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
             // 
             // FHuyDon

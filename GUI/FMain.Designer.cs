@@ -44,9 +44,9 @@
             this.panelGroup = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel_Header = new System.Windows.Forms.Panel();
-            this.lbl_logout = new System.Windows.Forms.Label();
-            this.lbl_UserName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_UserName = new System.Windows.Forms.Label();
+            this.lbl_logout = new System.Windows.Forms.Label();
             this.panel_sideBar.SuspendLayout();
             this.panel_QuanLy.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -228,10 +228,10 @@
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(208, 773);
+            this.panel4.Location = new System.Drawing.Point(208, 801);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1152, 38);
+            this.panel4.Size = new System.Drawing.Size(1152, 10);
             this.panel4.TabIndex = 0;
             // 
             // panelGroup
@@ -242,7 +242,7 @@
             this.panelGroup.Location = new System.Drawing.Point(208, 0);
             this.panelGroup.Margin = new System.Windows.Forms.Padding(4);
             this.panelGroup.Name = "panelGroup";
-            this.panelGroup.Size = new System.Drawing.Size(1152, 773);
+            this.panelGroup.Size = new System.Drawing.Size(1152, 801);
             this.panelGroup.TabIndex = 0;
             // 
             // panelMain
@@ -250,7 +250,7 @@
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(0, 143);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1152, 630);
+            this.panelMain.Size = new System.Drawing.Size(1152, 658);
             this.panelMain.TabIndex = 1;
             // 
             // panel_Header
@@ -261,6 +261,26 @@
             this.panel_Header.Name = "panel_Header";
             this.panel_Header.Size = new System.Drawing.Size(1152, 143);
             this.panel_Header.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lbl_UserName);
+            this.panel1.Controls.Add(this.lbl_logout);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(1018, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(134, 143);
+            this.panel1.TabIndex = 2;
+            // 
+            // lbl_UserName
+            // 
+            this.lbl_UserName.AutoSize = true;
+            this.lbl_UserName.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_UserName.Location = new System.Drawing.Point(3, 9);
+            this.lbl_UserName.Name = "lbl_UserName";
+            this.lbl_UserName.Size = new System.Drawing.Size(123, 26);
+            this.lbl_UserName.TabIndex = 0;
+            this.lbl_UserName.Text = "UserName";
             // 
             // lbl_logout
             // 
@@ -273,26 +293,6 @@
             this.lbl_logout.TabIndex = 1;
             this.lbl_logout.Text = "Đăng xuất";
             this.lbl_logout.Click += new System.EventHandler(this.lbl_logout_Click);
-            // 
-            // lbl_UserName
-            // 
-            this.lbl_UserName.AutoSize = true;
-            this.lbl_UserName.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_UserName.Location = new System.Drawing.Point(3, 9);
-            this.lbl_UserName.Name = "lbl_UserName";
-            this.lbl_UserName.Size = new System.Drawing.Size(123, 26);
-            this.lbl_UserName.TabIndex = 0;
-            this.lbl_UserName.Text = "UserName";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lbl_UserName);
-            this.panel1.Controls.Add(this.lbl_logout);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1018, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(134, 143);
-            this.panel1.TabIndex = 2;
             // 
             // FMain
             // 
